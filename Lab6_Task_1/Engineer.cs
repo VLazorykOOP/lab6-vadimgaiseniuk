@@ -27,7 +27,7 @@ public class Engineer : Employee, IComparable<Engineer>, ICloneable
         return result == 0 ? base.CompareTo(other) : result;
     }
 
-    public object Clone()
+    public new object Clone()
     {
         return new Engineer(this);
     }
